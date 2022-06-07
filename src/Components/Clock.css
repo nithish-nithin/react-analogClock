@@ -1,0 +1,115 @@
+  body{
+    background-color: black;
+  }
+ .clock {
+   width: 600px;
+   height: 600px;
+   box-shadow: 0 2px 30px rgba(252, 42, 147, 0.699);
+   position: absolute;
+    top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   border-radius: 50%;
+ }
+
+ .clock::after{
+        background-color:#aaa;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid #fff;
+      }
+
+      .hour_hand{
+        position: absolute;
+        width: 10px;
+        height: 120px;
+        background-color: rgb(206, 26, 158);
+        top: 30%;
+        left: 49%;
+        transform-origin: bottom;
+      }
+      .min_hand{
+          position: absolute;
+            width: 4px;
+            height: 187px;
+            background: rgb(255, 255, 255);
+            top: 18.5%;
+            left: 49%;
+            transform-origin: bottom;
+      }
+      .sec_hand{
+          position: absolute;
+            width: 2px;
+            height: 220px;
+            background: rgb(190, 16, 109);
+            top: 14.5%;
+            left: 50%;
+            transform-origin: bottom;
+       
+      }
+       
+      .clock span {
+        position: absolute;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 700px;
+          font-size: 70px;
+          color: #fff;
+      }
+ 
+      .twelve{
+        top: 8px;
+        left: 42%;
+      }
+      .one{
+        top: 40px;
+        right:25%;
+      }
+      .eleven{
+        top: 50px;
+        left: 20%;
+      }
+      .two{
+        top: 23%;
+        right: 10%;
+      }
+      .three{
+        top: 40%;
+        right: 10px;
+      }
+      .four{
+        right: 32px;
+        top: 60%;
+      }
+      .five{
+        right: 120px;
+        top: 76%;
+      }
+      .six{
+        bottom: 10px;
+        left: 46%;
+
+      }
+      .seven{
+        left: 130px;
+          top: 80%;
+      }
+      .eight{
+        left: 60px;
+          top: 62%;
+      }
+      .nine{
+        left: 10px;
+          top: 40%;
+      }
+      .ten{
+          top: 23%;
+            left: 10%;
+      }
+
